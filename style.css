@@ -1,83 +1,88 @@
-body{
-    color: white;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-transform: uppercase;
-    text-shadow: 2px 2px 2px black;
+body {
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 2px black;
 }
 
-
-.header{
-    
-    text-align: center;
-    margin-top: 6rem;
-    margin-bottom: 2rem;
-    
+.header {
+  text-align: center;
+  margin-top: 6rem;
+  margin-bottom: 2rem;
 }
 
-
-
-.container{
-    position: fixed;
-    display: block;
-    margin-top: 2rem;
-    width: 85vw;
-    height: 65%;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+.container {
+  position: fixed;
+  display: block;
+  margin-top: 2rem;
+  width: 85vw;
+  height: 65%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
-@media (min-width: 1366px){
-    .container{
+.text {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+}
+
+.text p {
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+#wisdom {
+  max-height: 100%;
+  font-size: 1rem;
+}
+
+@media (min-width: 1366px) {
+  .container {
     transform: translate(-50%, -70%);
-    }
+  }
 
-    .text{
-        font-size: 1.5rem;
-    }
+  #wisdom {
+    font-size: 1.5rem;
+  }
+
+  .text {
+    font-size: 1.5rem;
+  }
 }
 
-.text{
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 2rem;
+#generate {
+  text-align: center;
+  background-color: #4b6cb7;
+  font-size: 1.2rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-transform: uppercase;
+  color: aliceblue;
+  padding: 6px;
+  border-radius: 12%;
+  text-shadow: 2px 2px 2px black;
 }
 
-.text p{
-    font-style: italic;
-    letter-spacing: 1px;
-}
-
-#generate{
-    text-align: center;
-    background-color: #4b6cb7;
-    font-size: 1.2rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-transform: uppercase;
-    color: aliceblue;
-    padding: 6px;
-    border-radius: 12%;
-    text-shadow: 2px 2px 2px black;
-  
-}
-
-#generate:hover{
-    background-color: cornflowerblue;
+#generate:hover {
+  background-color: cornflowerblue;
 }
 
 #background {
-    width: 100%; 
-    height: 100%; 
-    position: fixed; 
-    left: 0px; 
-    top: 0px; 
-    z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
 }
 
 .stretch {
-    width:100%;
-    height:100%;
+  width: 100%;
+  height: 100%;
 }
